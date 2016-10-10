@@ -1,0 +1,7 @@
+{
+  "name": "Alabama IASIU",
+  "description": "SPA with some PHP and JS functionality. Client contact: steven.cox@nationwide.net",
+  "require": {
+    "phpmailer/phpmailer": "~5.2"
+  }
+}
