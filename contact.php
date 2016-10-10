@@ -3,10 +3,11 @@ require './vendor/autoload.php';
 
 $name 	  = $_POST["fullName"];
 $email	  = $_POST["email"];
-$message  = $email . "\r\n\r\n" . $_POST["message"];
+$message  = $email . " <br><br>" . $_POST["message"];
+// $to       = 'steven.cox@nationwide.com';
 $to       = 'isaacbell388@gmail.com';
 $subject  = "IASIU Mailer: Contact Request from $name";
-// $headers  = 'From: noreply@al-iasiu.com' . "\r\n" .
+// $headers  = 'From: noreply@al-iasiu.com'     . "\r\n" .
             // 'Reply-To: noreply@al-iasiu.com' . "\r\n" .
             // 'X-Mailer: PHP/' . phpversion();
 
@@ -44,29 +45,7 @@ if(!$mail->Send()) {
     exit();
 }
 
-// $mail->Send();
-
-// mail($to, $subject, $message, $headers);
-
-// Note: Deprecated this because of redirect error
-// header("Location: http://www.al-iasiu.com/");
+// header("Location: http://al-iasiu.com/");
 // exit();
 
-// if(!$mail->Send()) {
-//     echo "Mailer Error: " . $mail->ErrorInfo;
-//  } else {
-
-// $redirectURL = 'http://al-iasiu.com/'; // Must be abs. path
-// function redirect($url){
-//     if (headers_sent()){
-//     die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
-//     }else{
-//     header('Location: ' . $url);
-//     die();
-//     }    
-// }
-
-
-// redirect($redirectURL);
-// exit();
 ?> 
