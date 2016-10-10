@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Alambama Chapter of the IASIU</title>
+        <title>Alabama Chapter of the IASIU</title>
         <meta name="description" content="Funded in 1984, the International Association of Special Investigation Units (IASIU) is a non-profit organization dedicated to combating insurance fraud.">
         <!-- <meta name="keywords" content=""> -->
         <!-- <meta name="author" content=""> -->
