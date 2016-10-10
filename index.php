@@ -359,7 +359,7 @@
                                         <div class="form-group">
                                             <label for="name">Full Name</label>
                                             <input type="text" class="form-control" id="inputName" placeholder="Jane Doe"
-                                            name="name">
+                                            name="fullName">
                                         </div>
                                     </div>
                                 </div>

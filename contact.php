@@ -3,7 +3,7 @@ require './vendor/autoload.php';
 
 $name 	  = $_POST["fullName"];
 $email	  = $_POST["email"];
-$message  = $email . " <br><br>" . $_POST["message"];
+$message  = "Message received from: <br>" . $email . " <br><br>" . $_POST["message"];
 // $to       = 'steven.cox@nationwide.com';
 $to       = 'isaacbell388@gmail.com';
 $subject  = "IASIU Mailer: Contact Request from $name";
