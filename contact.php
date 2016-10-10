@@ -25,7 +25,7 @@ $mail->Subject = $subject;
 $mail->Body    = $message;
 $mail->isHTML(true);
 
-$mail->Send();
+// $mail->Send();
 
 // mail($to, $subject, $message, $headers);
 
