@@ -18,7 +18,6 @@ $mail->Username = $to;
 $mail->Password = 'Goonernoob';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
-$mail->SMTPDebug = 2;
 
 $mail->setFrom('noreply@al-iasiu.com', 'IASIU Mailer');
 $mail->addAddress($to);
@@ -26,20 +25,13 @@ $mail->Subject = $subject;
 $mail->Body    = $message;
 $mail->isHTML(true);
 
-if(!$mail->Send()) {
-    echo 'Message was not sent.';
-    echo 'Mailer error: ' . $mail->ErrorInfo;
-}else {
-    echo 'Message has been sent.';
-}
-
-// $mail->Send();
+$mail->Send();
 
 // mail($to, $subject, $message, $headers);
 
 // Note: Deprecated this because of redirect error
-// header("Location: http://www.al-iasiu.com/");
-// exit();
+header("Location: http://www.al-iasiu.com/");
+exit();
 
 // if(!$mail->Send()) {
 //     echo "Mailer Error: " . $mail->ErrorInfo;
