@@ -144,7 +144,7 @@
                                     </li>
                                     <li>
                                         <span class="fa fa-dot-circle-o"></span>
-                                        <em>Free access to the online website, www.iliasiu.com.</em>
+                                        <em>Free access to the online website, http://al-iasiu.com.</em>
                                     </li>
                                     <li>
                                         <span class="fa fa-dot-circle-o"></span>
