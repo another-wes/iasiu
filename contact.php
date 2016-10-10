@@ -4,12 +4,8 @@ require './vendor/autoload.php';
 $name 	  = $_POST["fullName"];
 $email	  = $_POST["email"];
 $message  = "Message received from: <br>" . $email . " <br><br>" . $_POST["message"];
-// $to       = 'steven.cox@nationwide.com';
-$to       = 'isaacbell388@gmail.com';
+$to       = 'steven.cox@nationwide.com';
 $subject  = "IASIU Mailer: Contact Request from $name";
-// $headers  = 'From: noreply@al-iasiu.com'     . "\r\n" .
-            // 'Reply-To: noreply@al-iasiu.com' . "\r\n" .
-            // 'X-Mailer: PHP/' . phpversion();
 
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -28,9 +24,9 @@ $mail->Body    = $message;
 $mail->isHTML(true);
 
 if(!$mail->Send()) {
+    // echo 'Mailer error: ' . $mail->ErrorInfo;
     echo 'Message was not sent.';
     echo "Mailer Error: Please fill out all fields in form.";
-    // echo 'Mailer error: ' . $mail->ErrorInfo;
 }else {
     $redirectURL = 'http://al-iasiu.com/'; // Must be abs. path
     function redirect($url){
@@ -44,8 +40,5 @@ if(!$mail->Send()) {
     redirect($redirectURL);
     exit();
 }
-
-// header("Location: http://al-iasiu.com/");
-// exit();
 
 ?> 
