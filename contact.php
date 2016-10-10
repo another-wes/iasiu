@@ -18,7 +18,7 @@ $mail->Username = $to;
 $mail->Password = 'Goonernoob334';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
-$mail->SMTPDebug = 2;
+// $mail->SMTPDebug = 2;
 
 $mail->setFrom('noreply@al-iasiu.com', 'IASIU Mailer');
 $mail->addAddress($to);
@@ -28,9 +28,20 @@ $mail->isHTML(true);
 
 if(!$mail->Send()) {
     echo 'Message was not sent.';
-    echo 'Mailer error: ' . $mail->ErrorInfo;
+    echo "Mailer Error: Please fill out all fields in form.";
+    // echo 'Mailer error: ' . $mail->ErrorInfo;
 }else {
-    echo 'Message has been sent.';
+    $redirectURL = 'http://al-iasiu.com/'; // Must be abs. path
+    function redirect($url){
+        if (headers_sent()){
+        die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
+        }else{
+        header('Location: ' . $url);
+        die();
+        }    
+    }
+    redirect($redirectURL);
+    exit();
 }
 
 // $mail->Send();
