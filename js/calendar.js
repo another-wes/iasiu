@@ -20,8 +20,8 @@ $.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.m
         end: new Date(2016, 10, 10)
       },
       {
-        title: 'General Business Meeting \n   10:00 am at Allstate Insurance, 2600 Corporate Dr. Ste. 240, Birmingham, AL',
-        start: new Date(2016, 11, 08),
+        title: 'General Business Meeting - \n 10:00 am at Allstate Insurance, 2600 Corporate Dr. Ste. 240, Birmingham, AL',
+        start: new Date(2016, 11, 08, 10, 00),
         end: new Date(2016, 11, 08)
       }
     ],
