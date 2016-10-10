@@ -11,17 +11,20 @@ $headers  = 'From: noreply@al-iasiu.com' . "\r\n" .
 
 mail($to, $subject, $message, $headers);
 
-header("Location: http://www.al-iasiu.com/");
-exit();
+// header("Location: http://www.al-iasiu.com/");
+// exit();
 
 // Redirect failsafe using JS
-// $url = 'http://al-iasiu.com/';
-// function redirect($url){
-//     if (headers_sent()){
-//       die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
-//     }else{
-//       header('Location: ' . $url);
-//       die();
-//     }    
-// }
+$redirectURL = 'http://al-iasiu.com/'; // Must be abs. path
+function redirect($url){
+    if (headers_sent()){
+      die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
+    }else{
+      header('Location: ' . $url);
+      die();
+    }    
+}
+
+redirect($redirectURL);
+exit();
 ?> 
