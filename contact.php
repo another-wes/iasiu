@@ -1,5 +1,5 @@
 <?php
-require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+require './vendor/autoload.php';
 
 $name 	  = $_POST["fullName"];
 $email	  = $_POST["email"];
@@ -18,6 +18,7 @@ $mail->Username = $to;
 $mail->Password = 'Goonernoob';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
+$mail->SMTPDebug = 2;
 
 $mail->setFrom('noreply@al-iasiu.com', 'IASIU Mailer');
 $mail->addAddress($to);
