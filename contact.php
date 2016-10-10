@@ -1,5 +1,5 @@
 <?php
-require 'PHPMailerAutoload.php';
+require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 $name 	  = $_POST["fullName"];
 $email	  = $_POST["email"];
