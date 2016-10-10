@@ -25,7 +25,14 @@ $mail->Subject = $subject;
 $mail->Body    = $message;
 $mail->isHTML(true);
 
-$mail->Send();
+if(!$mail->Send()) {
+    echo 'Message was not sent.';
+    echo 'Mailer error: ' . $mail->ErrorInfo;
+}else {
+    echo 'Message has been sent.';
+}
+
+// $mail->Send();
 
 // mail($to, $subject, $message, $headers);
 
@@ -37,17 +44,17 @@ $mail->Send();
 //     echo "Mailer Error: " . $mail->ErrorInfo;
 //  } else {
 
-$redirectURL = 'http://al-iasiu.com/'; // Must be abs. path
-function redirect($url){
-    if (headers_sent()){
-    die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
-    }else{
-    header('Location: ' . $url);
-    die();
-    }    
-}
+// $redirectURL = 'http://al-iasiu.com/'; // Must be abs. path
+// function redirect($url){
+//     if (headers_sent()){
+//     die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
+//     }else{
+//     header('Location: ' . $url);
+//     die();
+//     }    
+// }
 
 
-redirect($redirectURL);
-exit();
+// redirect($redirectURL);
+// exit();
 ?> 
