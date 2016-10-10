@@ -15,13 +15,13 @@ header("Location: http://www.al-iasiu.com/");
 exit();
 
 // Redirect failsafe using JS
-$url = 'http://al-iasiu.com/';
-function redirect($url){
-    if (headers_sent()){
-      die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
-    }else{
-      header('Location: ' . $url);
-      die();
-    }    
-}
+// $url = 'http://al-iasiu.com/';
+// function redirect($url){
+//     if (headers_sent()){
+//       die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
+//     }else{
+//       header('Location: ' . $url);
+//       die();
+//     }    
+// }
 ?> 
