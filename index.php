@@ -357,7 +357,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="name">Full Name</label>
+                                            <label for="fullName">Full Name</label>
                                             <input type="text" class="form-control" id="inputName" placeholder="Jane Doe"
                                             name="fullName">
                                         </div>
