@@ -20,7 +20,7 @@ $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 
 $mail->setFrom('noreply@al-iasiu.com', 'IASIU Mailer');
-$mail->setAddress($to);
+$mail->addAddress($to);
 $mail->Subject = $subject;
 $mail->Body    = $message;
 $mail->isHTML(true);
