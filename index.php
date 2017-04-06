@@ -62,7 +62,6 @@
                         <li><a href="#tf-home" class="page-scroll">Home</a></li>
                         <li><a href="#tf-about" class="page-scroll">About</a></li>
                         <li><a href="#tf-team" class="page-scroll">Membership</a></li>
-                        <li><a href="#tf-services" class="page-scroll">Message</a></li>
                         <li><a href="#tf-works" class="page-scroll">Sponsors</a></li>
                         <li><a href="#tf-testimonials" class="page-scroll">Calendar</a></li>
                         <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
@@ -183,52 +182,12 @@
                             <div class="row">
                                 <button class="btn btn-primary center-block nudge-down"><a target="_blank" href="https://iasiu.site-ym.com/general/pick_username.asp"><p style="color:white;">Join Online</p></a></button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Services Section
-                ==========================================-->
-                <div id="tf-services" class="text-center">
-                    <div class="container">
-                        <div class="section-title center">
-                            <h2><strong>president's message</strong></h2>
-                            <div class="line">
-                                <hr>
+                            <div class="row">
+                                <p class="intro justify">
+                                    For more resources and training information, or to view the online edition of <i>SIU Today</i>, visit our International page at <strong><a href="http://www.iasiu.org/">iasiu.org</a></strong>.
+                                </p>
                             </div>
-                            <div class="clearfix"></div>
                         </div>
-                        <div class="center">
-                            <img src="/img/steve.jpg" alt="" />
-                        </div>
-                        <div class="space"></div>
-                        <p class="intro justify">
-                            Hello, my name is Steven Cox and I am the President of the International Association of Special
-                            Investigations Unit – Alabama Chapter. It is an honor to serve such a great organization and
-                            work with a group of highly dedicated professionals.
-                            <br><br>
-                            I am excited and look forward to serving the members of the association. I believe that this
-                            chapter is made up of some of the most highly skilled and professional investigators in the
-                            country. The chapter has seen tremendous growth in membership in the recent years; however,
-                            we cannot rest on our past accomplishments. We ask for your active involvement as well in
-                            providing future training topics, recommending potential members to the chapter and
-                            volunteering to serve on the board.
-                            <br><br>
-                            I would like to thank past President Tami Nelson for the outstanding service she provided to the
-                            association. Tami has dedicated many years of service to the organization as a Board Member
-                            and President and should be commended for a job well done.
-                            <br><br>
-                            This year is shaping up to be a very busy year and we are in the planning stages now of bringing
-                            you a high quality training seminar in October 2016. Additionally, we are looking at providing
-                            one day specialized training classes throughout the year. Any suggestions you may have for
-                            future training or any needs that we can assist you with, please feel free to share them with us.
-                            <br><br>
-                            Remember, this is your association. The board members and I are here to serve you so if you
-                            have any questions please feel free to contact us.
-                            <br><br>
-                            Thank you.
-                            <br>
-                            -Steven C. Cox
-                        </p>
                     </div>
                 </div>
                 <!-- Clients Section
@@ -250,7 +209,7 @@
                                     <div class="col-md-12 center">
                                         
                                         <p class="intro">
-                                            Insurance fraud effects everyone, without exclusion.
+                                            Insurance fraud affects everyone, without exclusion.
                                         </p>
                                     </div>
                                 </div>
@@ -278,8 +237,7 @@
                                         </td>
                                         <!-- <span class="fa fa-dot-circle-o"></span> -->
                                         <td>
-                                            
-                                            <a target="_blank" style="color: blue;" href="http://www.fast-lab.com">Fast Lab</a>
+                                            <a target="_blank" style="color: blue;" href="http://www.fast-lab.com">Fast Lab</a><br>Contact: Sharee Wells, MS, F-ABC<br>Lab Director / Senior Forensic Scientist<br>Forensic and Scientific Testing<br>21 Industrial Drive<br>Thorsby, AL 35171<br>(205)646-0071<br><a target="_blank" style="color: blue;" href="mailto:swells@fast-lab.com">swells@fast-lab.com</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -299,6 +257,15 @@
                                         <td>
                                             
                                             <a target="_blank" style="color: blue;" href="http://www.fireonc.com/">Crain & Associates</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="http://iasiu-singlepage.herokuapp.com/img//seoc-logo.gif" alt="" />
+                                        </td>
+                                        <td>
+                                            
+                                            <a target="_blank" style="color: blue;" href="http://www.seocfire.com/">Southeastern Origin & Cause Fire Investigators</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -362,11 +329,6 @@
                                             name="fullName">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control" rows="3"
-                                    name="message"></textarea>
                                 </div>
                                 
                                 <button type="submit" class="btn tf-btn btn-default">Submit</button>
